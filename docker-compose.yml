@@ -3,3 +3,6 @@ waha:
 image: devlikeapro/waha:latest
 container_name: wpp_bot_waha
 restart: always
+
+ports:
+- '3000:3000'
