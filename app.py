@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Define uma rota para o webhook do chatbot, que aceita apenas requisições POST
 @app.route('/chatbot/webhook/', methods=['POST'])
 def webhook():
-    # Obtém os dados JSON da requisição
+    # Obtém os dados JSON da requisição POST
     data = request.json
     # Imprime os dados recebidos no console
     print(f'EVENTO RECEBIDO: {data}')
