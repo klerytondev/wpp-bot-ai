@@ -8,8 +8,8 @@ class Waha:
     def send_message(self, chat_id, message):
         url = f'{self.__api_url}/api/sendText'
         headers = {
-        'Content-Type': 'application/json',
-        }
+            'Content-Type': 'application/json',
+            }
         payload = {
             'session': 'default',
             'chatId': chat_id,
